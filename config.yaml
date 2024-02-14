@@ -1,0 +1,49 @@
+baseURL: https://czarinagluna.github.io/steigerwalt/
+title: My Valentine
+defaultContentLanguage: 'en'
+googleAnalytics: ''
+
+params:
+  image: /images/banner.png
+  copyright: Yours Forever,
+  author: Czarina Luna
+  dontShowSource: false # please, do not do this :)
+  love:
+    columns:
+      desktop:
+        love: 3
+        default: 3
+      mobile:
+        default: 1
+  socials:
+    - icon: 'fa fa-globe'
+      url: 'https://www.youtube.com/watch?v=IQ3SidJb1QI'
+  homepage: "/tags/love" # homepage link, mostly same with menu.main[0]
+  bypassWelcomePage: false # redirects "/" to "homepage" when it's true.
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  work: ":filename/"
+
+menu:
+  main:
+    - name: fell in love with...
+      url: /tags/love/
+      weight: 1
+    - name: Evan
+      url: /evan/
+      weight: 2
+    - name: valentine
+      url: /tags/charli/
+      weight: 3
+    - name: happily ever
+      url: https://countingdownto.com/countdown-pages/1NAgPRe8/
+      weight: 4
